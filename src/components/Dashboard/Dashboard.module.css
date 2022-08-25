@@ -32,7 +32,8 @@
 @media (max-width: 450px) {
 
     th,
-    td {
+    td,
+    button {
         font-size: x-small !important;
     }
 }
@@ -40,7 +41,8 @@
 @media (max-width: 330px) {
 
     th,
-    td {
+    td,
+    button {
         font-size: xx-small !important;
     }
 }
