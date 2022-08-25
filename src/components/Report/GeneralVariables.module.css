@@ -1,0 +1,17 @@
+.icon {
+    transform: translateY(-2px);
+}
+
+.card {
+    border-radius: 0;
+    border: none;
+}
+
+.cardHeader {
+    background-color: #97a39b !important;
+    border-radius: 0 !important;
+}
+
+.range {
+    --thumb-color: #97a39b;
+}

@@ -1,0 +1,9 @@
+.row {
+  background-color: #97a39b;
+}
+
+@media (max-width: 770px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+}
