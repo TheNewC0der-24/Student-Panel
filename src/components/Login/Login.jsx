@@ -41,7 +41,7 @@ const Login = () => {
                         </div>
                     </div>
                     <div className={`${styles.right} col-md-6 m-auto`}>
-                        <img className={`${styles.img} img-fluid mt-4`} src={login} alt="login" />
+                        <img className={`${styles.img} img-fluid mt-4`} src={login} width={550} alt="login" />
                     </div>
                 </div>
             </div>
