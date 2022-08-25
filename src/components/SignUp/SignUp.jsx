@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { IoIosLock } from 'react-icons/io';
 
-import welcome from '../../assets/Images/signup.png';
+import welcome from '../../assets/Images/signup.svg';
 
 const SignUp = () => {
 
@@ -15,7 +15,7 @@ const SignUp = () => {
             <div className="container mt-5">
                 <div className="row">
                     <div className={`${styles.left} col-md-6 d-flex justify-content-center m-auto`}>
-                        <img className={`${styles.img} img-fluid`} src={welcome} alt="welcome" />
+                        <img className={`${styles.img} img-fluid`} src={welcome} width={500} alt="welcome" />
                     </div>
                     <div className='col-md-6 m-auto'>
                         <div className='card border-0'>
