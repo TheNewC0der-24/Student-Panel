@@ -73,38 +73,34 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-md-6">
-                        <table className="table table-bordered border-dark text-center mb-5">
-                            <thead className='bg-dark text-white'>
-                                <tr>
-                                    <th scope="col">Pack Name</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Certificate</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <button className='btn btn-dark' data-bs-toggle="modal" data-bs-target="#packModal" style={{ backgroundColor: "#97a39b", borderColor: "#97a39b" }}>Frontend</button>
-                                    </td>
-                                    <td>
-                                        <button className='btn btn-warning button'>Pending</button>
-                                    </td>
-                                    <td>
-                                        <button className='btn btn-link fw-bold'>
-                                            <Link to='/certificate'>
-                                                Link
-                                            </Link>
-                                        </button>
-                                    </td>
-                                    {/* <td>View Certificate</td>
-                                <td>Link</td> */}
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div className="col-md-6">
+                <div className="d-flex justify-content-center mx-auto">
+                    <table className="table table-bordered border-dark text-center mb-5">
+                        <thead className='bg-dark text-white'>
+                            <tr>
+                                <th scope="col">Pack Name</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Certificate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <button className='btn btn-dark' data-bs-toggle="modal" data-bs-target="#packModal" style={{ backgroundColor: "#97a39b", borderColor: "#97a39b" }}>Frontend</button>
+                                </td>
+                                <td>
+                                    <button className='btn btn-warning button'>Pending</button>
+                                </td>
+                                <td>
+                                    <button className='btn btn-link fw-bold'>
+                                        <Link to='/certificate'>
+                                            Link
+                                        </Link>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    {/* <div className="col-md-6">
                         <table className="table table-bordered border-dark text-center mb-5">
                             <thead className='bg-dark text-white'>
                                 <tr>
@@ -129,7 +125,7 @@ const Dashboard = () => {
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <PackName />
