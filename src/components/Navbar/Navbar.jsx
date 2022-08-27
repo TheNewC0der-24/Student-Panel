@@ -28,7 +28,7 @@ const Navbar = () => {
 
             <nav className={`${styles.navbar} navbar navbar-expand-lg bg-white sticky-top`}>
                 <div className="container-fluid">
-                    <Link className="navbar-brand fw-bold fs-3" to="/">Talent <span className='bg-dark text-white p-2'>Sumo</span></Link>
+                    <Link className="navbar-brand fw-bold fs-3" to="/">Student <span className='bg-dark text-white p-2'>Panel</span></Link>
                     <button onClick={handleClick} className={`${styles.navbarToggler} navbar-toggler`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         {
                             toggle ? <FaTimes className='text-dark' /> : <FaBars className='text-dark' />

@@ -37,7 +37,7 @@ const Image = () => {
                         <div className="container my-3">
                             <h4>Question ?</h4>
                             <hr />
-                            <input accept="image/*" onChange={(e) => setSelectedImage(e.target.files[0])} className="form-control" type="file" id="select-image" />
+                            <input onChange={(e) => setSelectedImage(e.target.files[0])} className="form-control" type="file" id="select-image" />
                             <div className="d-flex gap-2 my-3 float-end">
                                 <button className="btn btn-outline-secondary" htmlFor="select-image">
                                     Upload
