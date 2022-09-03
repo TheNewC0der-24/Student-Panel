@@ -6,7 +6,7 @@ import { FaApple, FaAmazon, FaGoogle, FaBuilding, FaFileAlt } from 'react-icons/
 import { SiNetflix } from 'react-icons/si';
 import { BiGitBranch } from 'react-icons/bi';
 
-import brand from '../../assets/Images/favicon.png';
+import brand from '../../assets/Images/brand.png';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -246,8 +246,8 @@ const Library = () => {
                 </div>
             </div>
 
-            <div className='p-2 bg-dark my-5'>
-                <h1 className='text-center text-white'>Thank You for choosing aCLOUD</h1>
+            <div className='p-2 bg-light my-5'>
+                <h1 className='text-center'>Thank You for choosing <img src={brand} alt='brand' className='img-fluid' /> </h1>
             </div>
         </>
     )
