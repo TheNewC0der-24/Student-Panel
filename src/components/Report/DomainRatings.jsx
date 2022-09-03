@@ -4,7 +4,7 @@ const DomainRatings = () => {
     return (
         <>
             <div className="container">
-                <div className="card border-0 h-100">
+                <div className="card h-100" style={{ border: "2.5px solid #000" }}>
                     <div className="card-body" style={{ color: "#0b3c47" }}>
                         <h3 className='card-title text-center'>DOMAIN RATINGS</h3>
                         <p align="justify">Sales conversations and situations not only demand

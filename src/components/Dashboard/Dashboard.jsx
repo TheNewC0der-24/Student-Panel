@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Dashboard.module.css';
-// import dashboard from '../../assets/Images/dashboard.png';
 import img1 from '../../assets/Images/img-1.gif';
 import img2 from '../../assets/Images/img-2.gif';
 import img3 from '../../assets/Images/img-3.gif';
@@ -25,11 +24,11 @@ const Dashboard = () => {
                     }
                 `}
             </style>
-            <div className="container my-5">
+            <div className="container mt-5">
                 <div className="row mb-4">
-                    <div className="col-md-7 m-auto">
+                    <div className="col-md-7">
                         <div className={`${styles.card} card h-100`}>
-                            <div className="row g-0">
+                            <div className="row g-0 m-auto">
                                 <div className="col-md-4">
                                     <img src="https://gravatar.com/avatar/21396bf8a2c260311eaca86416ef5db7?s=400&d=mp&r=x" className="img-fluid p-3 rounded-circle d-flex justify-content-center mx-auto" alt="profileImage" />
                                 </div>
@@ -40,15 +39,20 @@ const Dashboard = () => {
                                         </h3>
                                         <h3 className='card-title'>Welcome, Username!</h3>
                                         <p>Get familiar with the dashboard, here are some ways to get started.</p>
-                                        <Link to="/profile">
-                                            <button className='btn btn-dark mt-3'>View Profile</button>
-                                        </Link>
+                                        <div className='d-flex gap-2'>
+                                            <Link to="/profile">
+                                                <button className='btn btn-outline-secondary mt-3'>View Profile</button>
+                                            </Link>
+                                            <Link to="/library">
+                                                <button className='btn btn-dark mt-3'>View Library</button>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-5 m-auto">
+                    <div className="col-md-5">
                         <div className={`${styles.cardCarousel} card border-0`}>
                             <div className="card-body">
                                 <Carousel
@@ -74,7 +78,7 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div className="d-flex justify-content-center mx-auto">
-                    <table className="table table-bordered border-dark text-center mb-5">
+                    <table className="table table-bordered border-dark text-center">
                         <thead className='bg-dark text-white'>
                             <tr>
                                 <th scope="col">Pack Name</th>
@@ -85,10 +89,40 @@ const Dashboard = () => {
                         <tbody>
                             <tr>
                                 <td>
-                                    <button className='btn btn-dark' data-bs-toggle="modal" data-bs-target="#packModal" style={{ backgroundColor: "#97a39b", borderColor: "#97a39b" }}>Frontend</button>
+                                    <button className='btn btn-dark' data-bs-toggle="modal" data-bs-target="#packModal">Backend</button>
                                 </td>
                                 <td>
-                                    <button className='btn btn-warning button'>Pending</button>
+                                    <h5><span className='badge bg-warning'>Pending</span></h5>
+                                </td>
+                                <td>
+                                    <button className='btn btn-link fw-bold'>
+                                        <Link to='/certificate'>
+                                            Link
+                                        </Link>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button className='btn btn-dark' data-bs-toggle="modal" data-bs-target="#packModal">Frontend</button>
+                                </td>
+                                <td>
+                                    <h5><span className='badge bg-success'>Completed</span></h5>
+                                </td>
+                                <td>
+                                    <button className='btn btn-link fw-bold'>
+                                        <Link to='/certificate'>
+                                            Link
+                                        </Link>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button className='btn btn-dark' data-bs-toggle="modal" data-bs-target="#packModal">AI/ML</button>
+                                </td>
+                                <td>
+                                    <h5><span className='badge bg-danger'>No Started</span></h5>
                                 </td>
                                 <td>
                                     <button className='btn btn-link fw-bold'>
@@ -112,7 +146,7 @@ const Dashboard = () => {
                                 <tr>
                                     <td>
                                         <Link to='/report'>
-                                            <button className='btn btn-dark' style={{ backgroundColor: "#97a39b", borderColor: "#97a39b" }}>View Report</button>
+                                            <button className='btn btn-dark' >View Report</button>
                                         </Link>
                                     </td>
                                     <td>

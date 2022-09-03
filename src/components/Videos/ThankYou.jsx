@@ -15,11 +15,9 @@ const ThankYou = () => {
                         <div className="container my-3">
                             <h3 className='mb-3'>Thank you!</h3>
                             <p align="justify">
-                                <span className='text-dark'>"Cognizant"</span> will now need some time to review all the video interviews submitted by candidates.
-                                Should Company wish to progress you through the interview process, they will be in contact within
-                                the next few days.
+                                The interaction is now complete. This will now be analyzed by our AI models (and coaches/HR managers, if applicable). You or your administrator will receive a detailed feedback on the same within next 72 hours.
                             </p>
-                            <p className='mt-4 text-dark'>Thank you..</p>
+                            <p className='mt-4 text-dark'>Now you can close this window!!</p>
                         </div>
                     </div>
                 </div>

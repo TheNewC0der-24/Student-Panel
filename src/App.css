@@ -1,11 +1,6 @@
 body {
-  background-color: #eef5ee;
+  background-color: #dee2e6;
   overflow-x: hidden;
-}
-
-p {
-  color: #6c757d !important;
-  /* font-size: large; */
 }
 
 input,
@@ -41,4 +36,18 @@ select:focus {
   background-color: #6c757d !important;
   border-radius: 0 !important;
   border-color: #6c757d !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+  font-size: 1.5rem !important;
+}
+
+.slick-slide>div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
 }

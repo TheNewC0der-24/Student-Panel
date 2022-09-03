@@ -23,14 +23,14 @@ const InteractionScorecard = () => {
             stroke: {
                 show: true,
                 dashArray: 0,
-                colors: ['#ff6384'],
+                colors: ['#505F79'],
             },
             markers: {
-                colors: ['#ff6384'],
+                colors: ['#505F79'],
             },
             fill: {
                 opacity: 0.5,
-                colors: ['#ff6384'],
+                colors: ['#505F79'],
             },
             // dataLabels: {
             //     enabled: true,
@@ -53,12 +53,12 @@ const InteractionScorecard = () => {
                 }
             },
             xaxis: {
-                categories: ['Likeability', 'Charm', 'Energy', 'Fluency', 'Confidence'],
+                categories: ['Likeability', 'Confidence', 'Energy', 'Fluency', 'Charm'],
                 labels: {
                     show: true,
                     style: {
-                        colors: ['#000', '#000', '#000', '#000', '#000', '#000'],
-                        fontSize: '15px',
+                        colors: ['#6c757d', '#6c757d', '#6c757d', '#6c757d', '#6c757d', '#6c757d'],
+                        fontSize: '18px',
                     }
                 },
             },
@@ -90,33 +90,45 @@ const InteractionScorecard = () => {
             <h3 className='text-center mb-3' style={{ color: "#0b3c47" }}>INTERACTION SCORECARD</h3>
             <div className="container">
                 <div className="row mt-5">
-                    <div className="img-fluid col-md-6 m-auto">
-                        <ReactApexChart
-                            // eslint-disable-next-line
-                            setState={setState}
-                            options={state.options}
-                            series={state.series}
-                            type="radar"
-                            style={{ borderColor: "#000" }}
-                        />
-                        <p>"likeability_aggregate", "charm_aggregate", "energy_aggregate", "fluency_aggregate", "confidence_aggregate"</p>
-                        <p>Sum(likeability_per_question)/number of questions</p>
-                        <p>Sum(charm_per_question)/number of questions</p>
-                        <p> Sum(energy_per_question)/number of questions</p>
+                    <div className="img-fluid col-md-6">
+                        <div className="card h-100" style={{ border: "2.5px solid #000" }}>
+                            <div className='mt-5 d-flex justify-content-center'>
+                                <ReactApexChart
+                                    // eslint-disable-next-line
+                                    setState={setState}
+                                    options={state.options}
+                                    series={state.series}
+                                    type="radar"
+                                    width={450}
+                                    height={450}
+                                    style={{ borderColor: "#000" }}
+                                />
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-md-6 m-auto">
-                        <div className="card border-0">
+                    <div className="col-md-6">
+                        <div className="card h-100" style={{ border: "2.5px solid #000" }}>
                             <div className="card-body">
-                                <h6 align="justify" className='text-secondary'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, laudantium mollitia amet id quaerat
-                                    voluptatum alias vel sapiente. Maiores eaque ab fugiat. Quibusdam delectus repellat esse porro qui,
-                                    est excepturi ad voluptate, sit, expedita at quae non deleniti perspiciatis sed temporibus. Neque
-                                    laborum a ab magni sunt laudantium debitis inventore blanditiis necessitatibus earum nobis ea nemo,
-                                    obcaecati eaque, in voluptates consequuntur dignissimos maxime quia exercitationem esse? Illo ullam,
-                                    doloribus quaerat cum soluta libero iure eveniet laboriosam quia atque minus earum perspiciatis fugiat
-                                    voluptatem deserunt voluptas voluptatum doloremque, vero ducimus fugit ipsam. Voluptas, accusamus?
-                                    Eligendi dolor dolore voluptates adipisci necessitatibus eum?
-                                </h6>
+                                <p align="justify" className='text-secondary'>
+                                    Every human interaction demonstrates what human resources experts define as power skills.
+                                    The attached spider chart demonstrates these traits that the AI models observe in the conversation.
+                                    Depending upon the particular context of the interaction we may or may not display certain traits.
+                                    Personality is not permanent and the models are a mere reflection of how you may be perceived by the others in the
+                                    particular interaction. This chart and report will help you to reflect deeply on your own performance. In overall
+                                    cohort scores in the power-skill areas are summarized as below. <span>Please review the
+                                        variable section below for more information</span>
+                                </p>
+                                <p>
+                                    Likeability : likeability_agregate
+                                    <br />
+                                    Charm : charm_agreegate
+                                    <br />
+                                    Energy : energy_agreegate
+                                    <br />
+                                    Fluency: fluency_agreegate
+                                    <br />
+                                    Confidence: Confidence_agreegate
+                                </p>
                             </div>
                         </div>
                     </div>

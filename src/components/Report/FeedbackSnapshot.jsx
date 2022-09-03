@@ -4,7 +4,7 @@ const FeedbackSnapshot = () => {
     return (
         <>
             <div className='container'>
-                <div className="card border-0 h-100">
+                <div className="card h-100" style={{ border: "2.5px solid #000" }}>
                     <div className="card-body" style={{ color: "#0b3c47" }}>
                         <h3 className='card-title text-center'>FEEDBACK SNAPSHOT</h3>
                         <p align="justify">Our models suggest an overall rating of

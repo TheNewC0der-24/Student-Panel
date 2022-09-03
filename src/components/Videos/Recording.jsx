@@ -56,7 +56,7 @@ const Recording = () => {
           <div className="col-md-8 m-auto">
             <div className="container my-3">
               <h3 className='text-center mb-3'>STEP 1: Let's check your device</h3>
-              <p align="justify">On your device, please grant access to your camera and microphone. <span className='text-dark fw-bold'>Run a test recording</span> to ensure you can see and hear yourself clearly.</p>
+              <p align="justify">On your device, please grant access to your camera and/or microphone. <span className='text-dark fw-bold'>Run a test recording</span> to ensure you can see and hear yourself clearly.</p>
               <p align="justify" className='text-danger'>Don't worry, this is just a test recording, and won't be shared with anyone else.</p>
               <div className='d-flex justify-content-between my-3'>
                 <div onClick={handleRecording} style={{ cursor: "pointer", color: "#97a39b" }} className='fw-bold text-decoration-underline'>&#60; How it Works?</div>

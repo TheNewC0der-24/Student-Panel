@@ -141,7 +141,7 @@ const ContentRatings = () => {
                     show: false,
                 },
             },
-            colors: ['#cc6f5f'],
+            colors: ['#505F79'],
             dataLabels: {
                 enabled: true,
                 formatter: (value) => {
@@ -154,7 +154,7 @@ const ContentRatings = () => {
                 showForSingleSeries: true,
                 customLegendItems: ['Actual Score', 'Target Score'],
                 markers: {
-                    fillColors: ['#cc6f5f', '#000000']
+                    fillColors: ['#505F79', '#000000']
                 }
             },
             yaxis: {
@@ -198,8 +198,8 @@ const ContentRatings = () => {
                     ratings. The top cohort rating (A) on more than 75% of the questions denotes high degree of proficiency and
                     accuracy in his answers.
                 </h6>
-                <table className="table table-bordered text-center" style={{ borderColor: "#cc6f5f" }}>
-                    <thead style={{ backgroundColor: "#cc6f5f" }}>
+                <table className="table table-bordered text-center" style={{ borderColor: "#505F79" }}>
+                    <thead className='text-white' style={{ backgroundColor: "#505F79" }}>
                         <tr>
                             <th scope="col">Match Score</th>
                             <th scope="col">Meaning</th>
@@ -225,16 +225,18 @@ const ContentRatings = () => {
                     </tbody>
                 </table>
                 <h5 className='mt-5 mb-3'>Question Specific Content Ratings :</h5>
-                <div className='d-flex justify-content-center mx-auto mt-5'>
-                    <ReactApexChart
-                        setState={setState}
-                        options={state.options}
-                        series={state.series}
-                        type="bar"
-                        height={500}
-                        width={1000}
-                        style={{ borderColor: "#000" }}
-                    />
+                <div className='card mt-5 mb-3' style={{ border: "2.5px solid #000" }}>
+                    <div className="card-body d-flex justify-content-center mx-auto">
+                        <ReactApexChart
+                            setState={setState}
+                            options={state.options}
+                            series={state.series}
+                            type="bar"
+                            height={500}
+                            width={1000}
+                            style={{ borderColor: "#000" }}
+                        />
+                    </div>
                 </div>
 
                 {/* <table className="table table-bordered text-center mb-5" style={{ borderColor: "#c4933b" }}>

@@ -1,0 +1,52 @@
+.container {
+    background-image: linear-gradient(-45deg, #6c757d, #acacac, #d1d1d1, #e2e2e2) !important;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.brand {
+    max-width: max-content;
+}
+
+.nav {
+    border-bottom: 3px solid #6c757d;
+}
+
+.navLink {
+    color: #000;
+    font-weight: bold;
+}
+
+.navLink:hover,
+.navLink:focus {
+    color: #6c757d;
+    background-color: white;
+}
+
+.tabContent {
+    background-color: #fff;
+}
+
+.logo {
+    transform: translateY(-3px);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 767.5px) {
+    .right {
+        display: none;
+    }
+}

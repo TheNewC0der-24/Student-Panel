@@ -14,7 +14,7 @@ import Footer from "./Footer";
 const Report = () => {
   return (
     <>
-      <div className="container my-5" style={{ backgroundColor: "#f4e9e2" }}>
+      <div className="container my-5 bg-light">
         <Logo />
         <Introduction />
         <hr />

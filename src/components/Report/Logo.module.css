@@ -1,5 +1,7 @@
 .row {
-  background-color: #97a39b;
+  /* background-color: #97a39b; */
+  background-color: #fff;
+  border: 5px solid #000;
 }
 
 @media (max-width: 770px) {
