@@ -15,11 +15,10 @@ const PackName = () => {
                         <div className="modal-body">
                             <div className='card border-0 bg-light'>
                                 <div className="card-body">
-                                    <h6>Experience : Relationship Manager in a Bank</h6>
-                                    <h6>Company : Talent Sumo</h6>
-                                    <div className='d-flex justify-content-between'>
-                                        <h6>Mentor : John Doe</h6>
-                                        <h6>Mentor Talk : <button className='btn btn-dark btn-sm'>View Media</button></h6>
+                                    <h6>Experience Name : Relationship Manager in a Bank</h6>
+                                    <h6>Organization : Talent Sumo</h6>
+                                    <div className='d-flex justify-content-end ms-auto'>
+                                        <h6>Expert Talk : <button className='btn btn-dark btn-sm'>View Media</button></h6>
                                     </div>
                                     <table className="table table-bordered text-center mt-3">
                                         <thead className='table-secondary'>
@@ -33,7 +32,20 @@ const PackName = () => {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td style={{ backgroundColor: "#282a2d", color: "#fff" }} rowSpan={2}>Virtual Exp</td>
+                                                <td style={{ backgroundColor: "#282a2d", color: "#fff" }}>Preview <span className='badge bg-danger'>Free</span></td>
+                                                <td>Bank Sales preview</td>
+                                                <td>
+                                                    <Link to="/form" target="_blank">
+                                                        <Link to="/form" target="_blank">
+                                                            <button className='btn btn-dark'>Try This !</button>
+                                                        </Link>
+                                                    </Link>
+                                                </td>
+                                                <td className='fw-bold text-danger'>Not Started</td>
+                                                <td>Not Generated</td>
+                                            </tr>
+                                            <tr>
+                                                <td style={{ backgroundColor: "#5f6368", color: "#fff" }} rowSpan={2}>Virtual Exp</td>
                                                 <td>Audio - Customer account opening assistance</td>
                                                 <td>
                                                     <Link to="/form" target="_blank">
@@ -58,7 +70,7 @@ const PackName = () => {
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style={{ backgroundColor: "#5f6368", color: "#fff" }}>Certification</td>
+                                                <td style={{ backgroundColor: "#80868b", color: "#fff" }}>Certification</td>
                                                 <td>MCQ Test - Selling in Bank</td>
                                                 <td>
                                                     <Link to="/form" target="_blank">
@@ -69,7 +81,7 @@ const PackName = () => {
                                                 <td>Not Generated</td>
                                             </tr>
                                             <tr>
-                                                <td style={{ backgroundColor: "#80868b", color: "#fff" }} rowSpan={2}>Interview</td>
+                                                <td style={{ backgroundColor: "#b2bcc0", color: "#fff" }} rowSpan={2}>Interview</td>
                                                 <td>Audio - Sales associate DBC Bank</td>
                                                 <td>
                                                     <Link to="/form" target="_blank">
